@@ -1,0 +1,22 @@
+{
+    "name": "golune/router",
+    "description": "The Laravel router, for use outside of the Laravel framework",
+    "keywords": ["laravel", "router"],
+    "license": "MIT",
+    "homepage": "http://golune.com",
+    "authors": [
+        {
+            "name": "guhao",
+            "homepage": "http://golune.com"
+        }
+    ],
+    "require": {
+        "illuminate/routing": "5.0.*@dev",
+        "illuminate/events": "5.0.*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Golune\\Routing\\": "src/"
+        }
+    }
+}
