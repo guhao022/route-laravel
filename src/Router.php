@@ -26,17 +26,13 @@ class Router {
         'Route'           => 'Illuminate\Support\Facades\Route',
         'URL'             => 'Illuminate\Support\Facades\URL'
     );
-    /**
-     * Create a new router instance.
-     *
-     * @return void
-     */
+
     public function __construct(){
         $this->bootstrap();
     }
+    
     public static function bootstrap(){
         if (static::$bootstrapped) return;
-        require_once 'vendor/illuminate/support/Illuminate/Support/helpers.php';
         $basePath = str_finish(realpath(__DIR__ . '/..'), '/');
         $controllersDirectory = $basePath . 'Controllers';
         $modelsDirectory = $basePath . 'Models';
